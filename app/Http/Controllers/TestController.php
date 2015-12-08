@@ -34,7 +34,7 @@ class TestController extends Controller implements temp1
     {
         $data = new DataManagement();
         $data = $data->getOrdersTraversing();
-        return view('orders', ['data' => $data]);
+        return view('pages\orders', ['data' => $data]);
 //        return $data;
     }
 

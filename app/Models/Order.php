@@ -27,9 +27,9 @@ class Order extends BaseModel
         return $this->belongsToMany('app\Models\Product', 'orders_products');
     }
 
-    public function ordersproducts()
+    public function orderproduct()
     {
-        return $this->hasMany('app\Models\OrdersProducts');
+        return $this->hasMany('app\Models\OrderProduct');
 
     }
 
@@ -45,7 +45,7 @@ class Order extends BaseModel
         $orders = Order::
         with(
 //            'ordersproducts'
-            'ordersproducts.product'
+            'orderproduct.product'
 //            array('product'=>function($query){
 //            $query->select('name');
 //                })

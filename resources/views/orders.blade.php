@@ -3,9 +3,9 @@
 @section('content')
 
     <h2>List of Order Products</h2>
-    <div class="content">
+    <div class="container">
 
-        <table>
+        <table class="table table-hover table-striped table-bordered" >
             <tr>
                 <th>
                     Order Id

@@ -17,7 +17,8 @@ class TasksController extends Controller
      */
     public function index()
     {
-        $tasks = app\Models\Order::paginate(2);
+//        $tasks = app\Models\Order::paginate(2);
+        $tasks = app\Task::paginate(2);
         $tasks->setPath('tasks');
         return view('tasks.index')->withTasks($tasks);
     }

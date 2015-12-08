@@ -25,7 +25,7 @@ class DataManagement
 
            $data = json_decode(json_encode($order),true);
 
-            foreach($order['ordersproducts'] as $products) {
+            foreach($order['orderproduct'] as $products) {
 
                 $dataOrders[$A]['order_name'] = $data['name'];
                 $dataOrders[$A]['order_id'] = $data['id'];

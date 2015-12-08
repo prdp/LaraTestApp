@@ -27,10 +27,10 @@ class Product extends BaseModel
     }
 
     // Define Many-Many relation with OrderProduct Table
-//    public function orderProduct()
-//    {
-//        return $this->hasMany('app\Models\OrdersProducts');
-//    }
+    public function ordersProducts()
+    {
+        return $this->hasMany('app\Models\OrdersProducts');
+    }
 
 
 }
