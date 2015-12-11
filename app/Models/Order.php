@@ -44,11 +44,7 @@ class Order extends BaseModel
     {
         $orders = Order::
         with(
-//            'ordersproducts'
             'orderproduct.product'
-//            array('product'=>function($query){
-//            $query->select('name');
-//                })
             )->
         get();
 //print_r($orders);die();

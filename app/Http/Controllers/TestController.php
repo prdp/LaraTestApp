@@ -34,6 +34,7 @@ class TestController extends Controller implements temp1
     {
         $data = new DataManagement();
         $data = $data->getOrdersTraversing();
+//        $data = $Paginator->make($data, count($data), 3);
         return view('pages\orders', ['data' => $data]);
 //        return $data;
     }
