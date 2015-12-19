@@ -7,6 +7,7 @@
  */
 
 namespace Lib;
+use __;
 
 
 class DataManagement

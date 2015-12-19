@@ -7,7 +7,7 @@ use app;
 use app\Http\Requests;
 use app\Http\Controllers\Controller;
 use Illuminate\Pagination\Paginator;
-
+use __;
 class TasksController extends Controller
 {
     /**
@@ -17,6 +17,9 @@ class TasksController extends Controller
      */
     public function index()
     {
+//        print_r(__::get(['foo' => ['bar' => 'ter']], 'foo.bar'));die;
+//        print_r(__::append([1, 2, 3], 4));die;
+//        echo 'here';die;
 //        $tasks = app\Models\Order::paginate(2);
         $tasks = app\Task::paginate(2);
         $tasks->setPath('tasks');
