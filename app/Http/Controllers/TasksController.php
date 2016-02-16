@@ -80,9 +80,7 @@ class TasksController extends Controller
      */
     public function edit($id)
     {
-//        print_r($id);die;
         $task = app\Task::findOrFail($id);
-//        print_r($task);die;
         return view('tasks.edit')->withTask($task);
     }
 
